@@ -1,0 +1,177 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400,700|Source+Sans+Pro:300,400,600,700');
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.menu {
+    font-family: "PT Sans", sans-serif;
+    font-weight: 600
+}
+
+button,
+input {
+    font-family: inherit;
+    font-size: 16px;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: "Source Sans Pro", sans-serif
+}
+
+.wrapper {
+    height: 2000px;
+}
+
+.main-background {
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.6)), url(../img/header-background.jpg) center / cover no-repeat;
+    height: 497.4px;
+    margin-bottom: 110px;
+}
+
+.container {
+    display: flex;
+    width: 1170px;
+    height: 49.7px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 40px;
+    justify-content: space-between;
+    align-items: center
+}
+
+.menu {
+    color: #fff;
+    padding: 0px 15px;
+}
+
+.menu-list {
+    display: flex;
+}
+
+.menu-list li {
+    display: flex;
+    align-items: center;
+    padding: 0px 25px;
+}
+
+.icon .btn {
+    background: none;
+    border: none;
+    color: #fff;
+    padding: 14px;
+}
+
+.hero {
+    position: absolute;
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.hero-text {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 32px;
+    color: #fff;
+}
+
+.hero-text a:hover {
+    color: #783df0;
+    transition: all 0.3s ease-in-out;
+}
+
+.hero-text li,
+.hero-text a {
+    color: rgba(255, 255, 255, 0.8)
+}
+
+.hero-text li+li::before {
+    content: '/';
+    padding: 5px;
+}
+
+.middle {
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.left-navbar {
+    width: 25%;
+}
+
+.checkbox {
+    width: 270px;
+    height: 43px;
+    color: #fff;
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    border-radius: 20px;
+    align-items: center;
+}
+
+.checkbox-setting {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.checkbox-setting input {
+    border: none;
+    padding: 0 20px 0 20px;
+    background: none;
+    color: rgba(0, 0, 0, 0.7)
+}
+
+.checkbox-setting button {
+    border: none;
+    padding: 0 20px;
+    background: none;
+    color: rgba(0, 0, 0, 0.5)
+}
+
+h6 {
+    margin-top: 35px;
+    margin-bottom: 20px;
+    color: rgba(0, 0, 0, 0.8);
+    ;
+}
+
+.sidebar-list :not(h6, ul, a) {
+    padding-left: 25px;
+}
+
+.topics-list {
+    border: 1px solid rgba(0, 0, 0, 0.09);
+    
+}
+
+.topics-list li {
+    display: flex;
+    width: 268px;
+    height: 40px;
+    align-items:  center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.09);
+}
+
+.topics-list a {
+  
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.topics-list a:hover {
+    color: #783df0;
+}
