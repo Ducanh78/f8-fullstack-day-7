@@ -6,7 +6,7 @@ h3,
 h4,
 h5,
 h6,
-.menu {
+.okla>a {
     font-family: "PT Sans", sans-serif;
     font-weight: 600
 }
@@ -57,12 +57,50 @@ body {
     display: flex;
 }
 
-.menu-list a {
+.menu-list a:not(.sub-menu a)  {
     display: flex;
     align-items: center;
-    padding: 25px 25px;
+    padding: 18px 25px;
     color: #fff;
 }
+
+/* SUB MENU */
+.okla {
+    position: relative;
+}
+
+.menu-list > li:hover .sub-menu {
+    display: block;
+    
+}
+
+.sub-menu {
+    position: absolute;
+    top: 50px;
+    width: 220px;
+    background-color: #fff;
+    display: none;
+    transition: 0.3s ease-in-out;
+}
+
+.sub-menu li:not(:last-child) {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.sub-menu a {
+    display: block;
+    color: rgba(0, 0, 0, 0.6);
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 15px 15px 15px 20px;
+    align-items: center;
+    font-size: 16px;
+    transition: 0.3s ease-in-out;
+}
+.sub-menu a:hover {
+    background-color: #b80257;
+}
+
+/* END SUB MENU */
 
 .icon .btn {
     background: none;
@@ -160,7 +198,7 @@ h3 {
 }
 
 .sidebar-list :not(h6, ul, a) {
-    padding-left: 25px;
+    padding-left: 20px;
 }
 
 .topics-list {
@@ -169,9 +207,6 @@ h3 {
 
 .topics-list li {
     display: flex;
-    width: 268px;
-    height: 40px;
-    align-items: center;
     border-bottom: 1px solid rgba(0, 0, 0, 0.09);
 }
 
@@ -182,6 +217,7 @@ h3 {
 .topics-list a {
     color: rgba(0, 0, 0, 0.7);
     transition: 0.3s ease-in-out;
+    padding: 12px 120px 12px 10px
 }
 
 .topics-list a:hover {
@@ -290,7 +326,7 @@ h3 {
 .list-end-section-3 li a:hover {
     transition: 0.3s ease-in-out;
     transform: translateY(-5px);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    box-shadow: 0 24px 10px -9px rgba(0, 0, 0, 0.4);
 }
 
 .container-section {
@@ -319,16 +355,19 @@ h3 {
 }
 
 .next-page {
-    width: 1980px;
-    display: flex;
-    justify-content:flex-end;
-    margin-top: 50px;
+    position: relative;
+   width: 1170px;
+   height: 100px;
+   margin-left: auto;
+   margin-right: auto;
 }
 
 .list-next-page{
     display: flex;
-    width: 870px;
     align-items: center;
+    position: absolute;
+    top: 50px;
+    left: 330px
 }
 
 .list-next-page li:not(:last-of-type) {
