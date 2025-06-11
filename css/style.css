@@ -106,7 +106,59 @@ body {
     background: none;
     border: none;
     color: #fff;
-    padding: 14px;
+    padding: 13px;
+    cursor: pointer;
+}
+
+/* Click searching */
+.icon {
+    display: flex;
+}
+
+.seaching {
+    position: relative;
+    top: 14px
+}
+.searching-box {
+    display: flex;
+    position: absolute;
+    top: 30px;
+    right: -30px;
+    align-items: center;
+    height: 55px;
+    width: 300px;
+    background-color: #fff;
+    display: none;
+}
+
+.search-toggle { 
+    display: none; 
+}
+
+.search-toggle:checked ~ .searching-box {
+    display: block;
+}
+
+.searching-box .fa-solid {
+    display: flex;
+    color: #fff;
+    background-color: #b80257;
+    width: 45px;
+    height: 45px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 5px;
+    left: 250px;
+    cursor: pointer;
+}
+.searching-box input {
+    outline: none;
+    border: 1px solid #ececec;
+    height: 45px;
+    padding: 0 40px 0 20px;
+    margin: 4px 5px;
+    color: rgba(0, 0, 0, 0.7);
 }
 
 .hero {
