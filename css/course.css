@@ -1,0 +1,201 @@
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.wrapper {
+    min-height: 50px;
+    background-color: #fff;
+}
+
+.container {
+    height: inherit;
+    margin-bottom: 10px;
+    background-color: #191d1e;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    height: 50px;
+    color: rgba(255, 255, 255, 0.8);
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 16px;
+    font-weight: 700;
+    justify-content: space-between;
+}
+
+.f8-header {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.logo-header p {
+    display: inline;
+}
+
+.logo-header {
+    display: flex;
+    align-items: center;
+    gap: 10px
+}
+
+.header-33 {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.icon-box {
+    display: inline-block;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    background-color: #292d35;
+    align-items: center;
+    text-align: center;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.icon-header>.icon-box:nth-child(2) {
+    opacity: 0.6;
+    cursor: default;
+}
+
+.icon-box img {
+    position: relative;
+    top: 10px;
+
+}
+
+.icon-header {
+    display: flex;
+}
+
+.avt-header img {
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+}
+
+.avt-box {
+    display: flex;
+    width: 185px;
+    background-color: #292d35;
+    border-radius: 17px;
+    align-items: center;
+}
+
+.avt-name {
+    padding: 0 10px;
+}
+
+.avt-box {
+    cursor: pointer;
+}
+
+.icon-box:hover {
+    background-color: #2e4a8d;
+}
+
+.avt-box:hover {
+    background-color: #2e4a8d;
+}
+
+/* MIDDLE */
+
+.middle {
+    display: flex;
+    width: 1200px;
+    min-height: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidebar {
+    width: 300px;
+    min-height: 100px;
+    background-color: #272a31;
+}
+
+.row-sidebar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 50px;
+    z-index: 1;
+    width: 300px;
+    background-color: #272a31;
+}
+
+.search-sidebar {
+    display: flex;
+    background-color: rgb(50, 60, 74);
+    width: 190px;
+    height: 40px;
+    align-items: center;
+    gap: 5px;
+    border-radius: 10px;
+    margin: 10px 0 10px 10px;
+    float: left;
+}
+
+.search-text {
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+    overflow: hidden;
+    width: 150px;
+    font-size: 14px;
+}
+
+.search-sidebar .fa-solid {
+    color: #fff;
+    padding-left: 10px;
+}
+
+.save-sidebar p {
+    font-size: 10px;
+    color: rgb(0, 147, 252);
+}
+
+.save-sidebar {
+    text-align: center;
+    margin: 8px 20px 0 0;
+    cursor: pointer;
+}
+
+/* COURSE LIST */
+.grab-course {
+    padding: 10px 0;
+    line-height: 25px;
+}
+
+.set-bg {
+    background-color: #00809d;
+    width: 100%;
+    position: sticky;
+    top: 110px;
+}
+
+.part-course li {
+    border-bottom: 1px solid black;
+    padding: 10px 10px;
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 14px;
+}
+
+.grab-course p {
+    color: rgba(255, 255, 255, 0.9);
+    font-size: 18px;
+    padding: 8px;
+    font-weight: 700;
+}
