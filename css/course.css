@@ -191,6 +191,11 @@ body {
     padding: 10px 10px;
     color: rgba(255, 255, 255, 0.9);
     font-size: 14px;
+    cursor: pointer;
+}
+
+.part-course li:hover {
+    background-color: #32353b;
 }
 
 .grab-course p {
@@ -198,4 +203,9 @@ body {
     font-size: 18px;
     padding: 8px;
     font-weight: 700;
+    cursor: pointer;
+}
+
+.grab-course p:hover {
+    background-color: #2894ad;
 }
