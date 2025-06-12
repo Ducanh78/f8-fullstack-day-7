@@ -81,6 +81,7 @@ body {
     background-color: #fff;
     display: none;
     transition: 0.3s ease-in-out;
+    z-index: 1;
 }
 
 .sub-menu li:not(:last-child) {
@@ -167,6 +168,7 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    z-index: 0;
 }
 
 .hero-text {
