@@ -310,11 +310,13 @@ h3 {
 }
 
 .menu-right-bar a:hover {
+    display: flex;
     background: #783df0;
     transition: 0.3s ease-in-out;
     border-radius: 15px;
     height: 22px;
-    color: #fff
+    color: #fff;
+    align-items: center;
 }
 
 .new-section-1, .new-section-2, .new-section-3 {
